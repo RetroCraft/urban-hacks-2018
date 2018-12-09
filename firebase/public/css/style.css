@@ -1,8 +1,87 @@
-#mapContainer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -100000000000;
+#bg-img {
+  background-image: url('../img/background.png');
+  filter: blur(8px) brightness(50%);
+  -webkit-filter: blur(8px) brightness(50%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#landing {
+  transition: all 1s;
+  text-align: center;
+}
+
+.entered #landing, .entered #bg-img {
+  min-height: 0;
+  height: 0!important;
+  opacity: 0;
+}
+
+.columns {
+  margin-bottom: 0!important;
+}
+
+.column {
+  transition: all 1s;
+}
+
+#sidebar {
+  padding: 1rem;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: #333;
+}
+
+#switch {
+  transition: all 1s;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  opacity: 0;
+}
+
+.entered #switch {
+  opacity: 1;
+}
+
+.paramedic .is-one-third {
+  width: 100%!important;
+}
+
+.progress {
+  transition: all 1s;
+}
+
+.paramedic progress {
+  height: 0!important;
+}
+
+.beds {
+  transition: all 1s;
+  text-align: center;
+  display: block;
+}
+
+.paramedic .beds {
+  font-size: 2rem;
+}
+
+.paramedic #switch {
+  transform: rotate(720deg);
+}
+
+.paramedic .hospital {
+  opacity: 1!important;
+}
+
+.hospital {
+  transition: all 0.2s;
+}
+
+.faded .hospital:not(.active):not(.hover) {
+  opacity: 0.5;
 }
