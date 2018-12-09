@@ -2,7 +2,8 @@ function initMap() {
   // Initialize the platform object:
   var platform = new H.service.Platform({
     'app_id': 'qcgWR8aU7oPofNNf8V62',
-    'app_code': 'n1fzJoqHzGHB3NxdcxJpFA'
+    'app_code': 'n1fzJoqHzGHB3NxdcxJpFA',
+    'useHTTPS': true
   });
 
   var pixelRatio = window.devicePixelRatio || 1;

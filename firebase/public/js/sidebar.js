@@ -60,7 +60,6 @@ function redrawSidebar() {
       resetMap(window.map, { lat: hospital.latitude, lng: hospital.longitude });
       window.markers.forEach((marker => {
         if (marker.getData() && marker.getData().objectid === window.activeHospital) {
-          console.log('icon found')
           marker.setIcon(generateIcon('#f00'));
         } else {
           marker.setIcon(generateIcon('#18d'));
